@@ -6,17 +6,17 @@ category: MachineLearning, Tensorflow
 
 I recently attended the UCL Deepmind [Tensorflow lecture series](http://www.csml.ucl.ac.uk/events/lunch_talks) before it got abrubptly ended by Covid19.  To continue this training I found the Tensforflow in 7hrs video blog which nicely breaks down machine learning models within Tensorflow.  Here are links to the Jupyter web pages that can be run in CoLab so you can see a explanation of ML models.
 
-[📕 Module 2: Introduction to TensorFlow](https://www.youtube.com/redirect?q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1F_EWVKa8rbMXi3_fG0w7AtcscFq7Hi7B%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
+[📕 Module 2: Introduction to TensorFlow](https://colab.research.google.com%2Fdrive%2F1F_EWVKa8rbMXi3_fG0w7AtcscFq7Hi7B%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
 
-[📗 Module 3: Core Learning Algorithms](https://www.youtube.com/redirect?q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
+[📗 Module 3: Core Learning Algorithms](https://colab.research.google.com%2Fdrive%2F15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
 
-[📘 Module 4: Neural Networks with TensorFlow](https://www.youtube.com/redirect?q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1m2cg3D1x3j5vrFc-Cu0gMvc48gWyCOuG%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
+[📘 Module 4: Neural Networks with TensorFlow](https://colab.research.google.com%2Fdrive%2F1m2cg3D1x3j5vrFc-Cu0gMvc48gWyCOuG%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
 
-[📙 Module 5: Deep Computer Vision](https://www.youtube.com/redirect?q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1ZZXnCjFEOkp_KdNcNabd14yok0BAIuwS%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
+[📙 Module 5: Deep Computer Vision](https://colab.research.google.com%2Fdrive%2F1ZZXnCjFEOkp_KdNcNabd14yok0BAIuwS%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
 
-[📔 Module 6: Natural Language Processing with RNNs](https://www.youtube.com/redirect?q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1ysEKrw_LE2jMndo1snrZUh5w87LQsCxk%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
+[📔 Module 6: Natural Language Processing with RNNs](https://colab.research.google.com%2Fdrive%2F1ysEKrw_LE2jMndo1snrZUh5w87LQsCxk%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
 
-[📒 Module 7: Reinforcement Learning](https://www.youtube.com/redirect?q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1IlrlS3bB8t1Gd5Pogol4MIwUxlAjhWOQ%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
+[📒 Module 7: Reinforcement Learning](https://colab.research.google.com%2Fdrive%2F1IlrlS3bB8t1Gd5Pogol4MIwUxlAjhWOQ%23forceEdit%3Dtrue%26sandboxMode%3Dtrue&redir_token=d_sosyX5dxwM0XmcSqPcEH1bM6R8MTU4NjI5ODUyM0AxNTg2MjEyMTIz&event=video_description&v=tPYj3fFJGjk)
 
 ## Running Locally.
 
