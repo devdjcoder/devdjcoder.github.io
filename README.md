@@ -2,4 +2,6 @@
 
 Blog located at : https://devdjcoder.github.io/
 
-See installation notes at [README_Install.md]
+See installation notes at [README_Install.md](./README_Install.md)
+
+
