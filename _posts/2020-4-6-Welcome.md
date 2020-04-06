@@ -12,5 +12,6 @@ Using the Jeykll blogging system on gihub using markdown.
 * https://github.com/devdjcoder/devdjcoder.github.io (renamed from project-devblog)
 * https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+* [README_Install.md](https://raw.githubusercontent.com/devdjcoder/devdjcoder.github.io/master/README_Install.md)
 
 
