@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tensorflow Training Made Easy – DJCoder – Cloud Native Development</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="I recently attended the UCL Deepmind Tensorflow lecture series before it got abrubptly ended by Covid19.  To continue this training I found the curated Tensforflow notebooks that explans the ML landscape as a series of modules within Tensorflow.  Here are links:
+
+" />
+    <meta property="og:description" content="I recently attended the UCL Deepmind Tensorflow lecture series before it got abrubptly ended by Covid19.  To continue this training I found the curated Tensforflow notebooks that explans the ML landscape as a series of modules within Tensorflow.  Here are links:
+
+" />
+    
+    <meta name="author" content="DJCoder" />
+
+    
+    <meta property="og:title" content="Tensorflow Training Made Easy" />
+    <meta property="twitter:title" content="Tensorflow Training Made Easy" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="DJCoder - Cloud Native Development" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/devdjcoder/devdjcoder.github.io/master/images/jekyll-logo.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">DJCoder</a></h1>
+            <p class="site-description">Cloud Native Development</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Tensorflow Training Made Easy</h1>
+
+  <div class="entry">
+    <p>I recently attended the UCL Deepmind <a href="http://www.csml.ucl.ac.uk/events/lunch_talks">Tensorflow lecture series</a> before it got abrubptly ended by Covid19.  To continue this training I found the curated Tensforflow notebooks that explans the ML landscape as a series of modules within Tensorflow.  Here are links:</p>
+
+<p><a href="https://colab.research.google.com/drive/1F_EWVKa8rbMXi3_fG0w7AtcscFq7Hi7B#forceEdit=true&amp;sandboxMode=true">📕 Module 2: Introduction to TensorFlow</a></p>
+
+<p><a href="https://colab.research.google.com/drive/15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay#forceEdit=true&amp;sandboxMode=true">📗 Module 3: Core Learning Algorithms</a></p>
+
+<p><a href="https://colab.research.google.com/drive/1m2cg3D1x3j5vrFc-Cu0gMvc48gWyCOuG#forceEdit=true&amp;sandboxMode=true">📘 Module 4: Neural Networks with TensorFlow</a></p>
+
+<p><a href="https://colab.research.google.com/drive/1ZZXnCjFEOkp_KdNcNabd14yok0BAIuwS#forceEdit=true&amp;sandboxMode=true">📙 Module 5: Deep Computer Vision</a></p>
+
+<p><a href="https://colab.research.google.com/drive/1ysEKrw_LE2jMndo1snrZUh5w87LQsCxk#forceEdit=true&amp;sandboxMode=true">📔 Module 6: Natural Language Processing with RNNs</a></p>
+
+<p><a href="https://colab.research.google.com/drive/1IlrlS3bB8t1Gd5Pogol4MIwUxlAjhWOQ#forceEdit=true&amp;sandboxMode=true">📒 Module 7: Reinforcement Learning</a></p>
+
+<h2 id="running-locally">Running Locally.</h2>
+
+<p>You can run the above notebooks either using CoLab resources or (like I do) run a local Jupyter Execution runtime using the following:</p>
+
+<p>Pre-requisites</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$python --version
+3.x
+
+$virtualenv --version
+15.0.1
+
+$pip3 --version
+pip 19.1.1
+</code></pre></div></div>
+
+<p>Create a requirements file for the depdendencies required for the notebooks above.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter_http_over_ws
+wrapt&gt;=1.11.1
+google-cloud-core
+requests&lt;=2.21.0
+six&gt;=1.12.0
+grpcio&gt;=1.24.3
+tensorflow&gt;=2.x
+keras
+
+# Clash with Gym
+# tensorflow_probability==0.8.0rc0
+# cloudpickle=1.1.1
+
+# GYM Has clash with tf_propbs
+cloudpickle&lt;1.4.0,&gt;=1.2.0
+gym
+
+</code></pre></div></div>
+
+<p>Create a VirtualVenv and run the following</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$virtualenv venv
+$source venv/bin/activate
+(venv)$pip3 install -r requirements.txt
+(venv)$jupyter serverextension enable --py jupyter_http_over_ws
+(venv)$jupyter notebook \
+  --NotebookApp.allow_origin='https://colab.research.google.com' \
+  --port=8888 \
+  --NotebookApp.port_retries=0
+
+# Open the notebooks above and connect to the local runtime providing the url of the above output - ENJOY!!
+
+</code></pre></div></div>
+
+
+  </div>
+
+  <div class="date">
+    Written on April  6, 2020
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/devdjcoder/devdjcoder.github.io"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/djbitcoder"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

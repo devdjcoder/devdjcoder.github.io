@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-26T14:23:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DJCoder</title><subtitle>Cloud Native Development</subtitle><entry><title type="html">Tensorflow Training Made Easy</title><link href="http://localhost:4000/TensorflowTraining/" rel="alternate" type="text/html" title="Tensorflow Training Made Easy" /><published>2020-04-06T00:00:00+01:00</published><updated>2020-04-06T00:00:00+01:00</updated><id>http://localhost:4000/TensorflowTraining</id><content type="html" xml:base="http://localhost:4000/TensorflowTraining/">&lt;p&gt;I recently attended the UCL Deepmind &lt;a href=&quot;http://www.csml.ucl.ac.uk/events/lunch_talks&quot;&gt;Tensorflow lecture series&lt;/a&gt; before it got abrubptly ended by Covid19.  To continue this training I found the curated Tensforflow notebooks that explans the ML landscape as a series of modules within Tensorflow.  Here are links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/1F_EWVKa8rbMXi3_fG0w7AtcscFq7Hi7B#forceEdit=true&amp;amp;sandboxMode=true&quot;&gt;📕 Module 2: Introduction to TensorFlow&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay#forceEdit=true&amp;amp;sandboxMode=true&quot;&gt;📗 Module 3: Core Learning Algorithms&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/1m2cg3D1x3j5vrFc-Cu0gMvc48gWyCOuG#forceEdit=true&amp;amp;sandboxMode=true&quot;&gt;📘 Module 4: Neural Networks with TensorFlow&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/1ZZXnCjFEOkp_KdNcNabd14yok0BAIuwS#forceEdit=true&amp;amp;sandboxMode=true&quot;&gt;📙 Module 5: Deep Computer Vision&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/1ysEKrw_LE2jMndo1snrZUh5w87LQsCxk#forceEdit=true&amp;amp;sandboxMode=true&quot;&gt;📔 Module 6: Natural Language Processing with RNNs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/1IlrlS3bB8t1Gd5Pogol4MIwUxlAjhWOQ#forceEdit=true&amp;amp;sandboxMode=true&quot;&gt;📒 Module 7: Reinforcement Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;running-locally&quot;&gt;Running Locally.&lt;/h2&gt;
+
+&lt;p&gt;You can run the above notebooks either using CoLab resources or (like I do) run a local Jupyter Execution runtime using the following:&lt;/p&gt;
+
+&lt;p&gt;Pre-requisites&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$python --version
+3.x
+
+$virtualenv --version
+15.0.1
+
+$pip3 --version
+pip 19.1.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Create a requirements file for the depdendencies required for the notebooks above.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter_http_over_ws
+wrapt&amp;gt;=1.11.1
+google-cloud-core
+requests&amp;lt;=2.21.0
+six&amp;gt;=1.12.0
+grpcio&amp;gt;=1.24.3
+tensorflow&amp;gt;=2.x
+keras
+
+# Clash with Gym
+# tensorflow_probability==0.8.0rc0
+# cloudpickle=1.1.1
+
+# GYM Has clash with tf_propbs
+cloudpickle&amp;lt;1.4.0,&amp;gt;=1.2.0
+gym
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Create a VirtualVenv and run the following&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$virtualenv venv
+$source venv/bin/activate
+(venv)$pip3 install -r requirements.txt
+(venv)$jupyter serverextension enable --py jupyter_http_over_ws
+(venv)$jupyter notebook \
+  --NotebookApp.allow_origin=&apos;https://colab.research.google.com&apos; \
+  --port=8888 \
+  --NotebookApp.port_retries=0
+
+# Open the notebooks above and connect to the local runtime providing the url of the above output - ENJOY!!
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="MachineLearning, Tensorflow" /><summary type="html">I recently attended the UCL Deepmind Tensorflow lecture series before it got abrubptly ended by Covid19. To continue this training I found the curated Tensforflow notebooks that explans the ML landscape as a series of modules within Tensorflow. Here are links:</summary></entry><entry><title type="html">Welcome to New Blog</title><link href="http://localhost:4000/Welcome/" rel="alternate" type="text/html" title="Welcome to New Blog" /><published>2020-04-05T00:00:00+01:00</published><updated>2020-04-05T00:00:00+01:00</updated><id>http://localhost:4000/Welcome</id><content type="html" xml:base="http://localhost:4000/Welcome/">&lt;p&gt;This is first blog post entry to devdjcoder architecture, engineering and discussions on good software engineering in cloud and (non-cloud if needed).&lt;/p&gt;
+
+&lt;p&gt;Using the Jeykll blogging system on gihub using markdown.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://github.com/devdjcoder/devdjcoder.github.io (renamed from project-devblog)&lt;/li&gt;
+  &lt;li&gt;https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/&lt;/li&gt;
+  &lt;li&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://raw.githubusercontent.com/devdjcoder/devdjcoder.github.io/master/README_Install.md&quot;&gt;README_Install.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="general" /><category term="blog" /><summary type="html">This is first blog post entry to devdjcoder architecture, engineering and discussions on good software engineering in cloud and (non-cloud if needed).</summary></entry></feed>
